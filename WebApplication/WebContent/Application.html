@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<style>
+body{
+background: url(sweettexture.jpg);
+}</style>
+</head>
+<body>
+<center>
+<h1>Registration form</h1>
+<form>
+USER NAME:<input type="text" placeholder="name" required="This field should not be empty"/></br>
+PASSWORD:<input type="text" placeholder="me@example.com" required="Enter a valid password"/></br>
+<input type="text" placeholder="renter your password"/></br>
+DOB:<input type="date"/></br>
+QUALIFICATION:<br><input type="checkbox" value="UG"/>UG</br>
+<input type="checkbox" value="PG"/>PG</br>
+<input type="checkbox" value="Doctorate"/>Doctorate</br>
+<input list="country" name="country" class="datalist-input" />
+    <datalist id="country">
+        <option value="India" />
+        <option value="Pakistan" />
+        <option value="China" />
+        <option value="America" />
+        </datalist>
+        <img src="captcha_code_file.php?rand=<?php echo rand(); ?>"
+id="captchaimg" >
+<label for="message">Enter the code above here :</label>
+<input id="6_letters_code" name="6_letters_code" type="text">
+ 
+<input type="submit" name=submit/>
+</form>
+</center>
+</body>
+</html>
